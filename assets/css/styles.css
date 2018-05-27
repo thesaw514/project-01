@@ -1,0 +1,228 @@
+/* Theodore Sawyer, FEND - Project 01: 'Build a Portfolio Site' / styles.css / 05.26.18 */
+/* SELECT ALL (*) ELEMENTS AND OVERWRITE BROWSER DEFAULTS */
+* {
+    padding: 0;
+    margin: auto 0;
+    font-family: "Lato", sans-serif;
+	color: #676858;
+	font-weight: 300;
+}
+
+hr {
+    background: #bcbbbb;
+    border: 0 none;
+    height: 2px;
+    margin: 20px 0;
+  }
+
+/* RESPONSIVE / MOBILE */
+@media only screen and (min-width: 0px) {
+
+    body {
+        margin: auto;
+        padding: 0 10px;
+    }
+
+    /* HEADER */
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo {
+        width: 70px;
+        height: 70px;
+        display: block;
+        align-self: center;
+    }
+
+    .name-title {
+        align-self: center;
+        text-align: right;
+    }
+
+    /* TEXTUAL CONTENT */
+    h1 {
+        text-transform: uppercase;
+        font-family: "Lato", sans-serif;
+        font-size: 2.6em;
+        letter-spacing: -2px;
+        font-weight: 100;
+        line-height: 1.2em;
+    }
+
+    h2 {
+        text-transform: uppercase;
+        font-size: 0.9em;
+        color: #ffa500;
+        font-weight: 800;
+    }
+
+    h3 {
+
+        font-family: "Lato", sans-serif;
+        color: #9b9b9b;
+        font-size: 1.5em;
+        font-weight: 800;
+    }
+
+    h4 {
+        font-size: 1.3em;
+        margin-top: 0.4em;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    h5 {
+        font-family: "Lato", sans-serif;
+        font-size: 1em;
+        font-weight: 600;
+        margin-top: 0.4em;
+        color: #9b9b9b;
+        text-align: center;
+    }
+
+    p {
+        font-size: 0.9em;
+        font-weight: 100;
+        text-align: center;
+    }
+
+    /* URLs / LINKS */
+    a { text-decoration: none; }
+
+    a h4:hover { color: #9b9b9b; }
+
+    /* MAIN CONTENT */
+    .img-hero {
+        width: 100%;
+        display: block;
+    }
+
+    .img-featured {
+        width: 100%;
+        display: block;
+        border: 1px solid #9b9b9b;
+    }
+
+    .featured-work-container { margin: 1em 0; }
+
+    .featured-work-content { padding-top: 1.4em; }
+
+    .featured-content-spacing { margin-bottom: 20px; }
+
+    /* FOOTER */
+    footer {
+        border: 1px solid #d9d9d9;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-logo-img {
+        width: 35px;
+        height: 35px;
+        margin-top: 10px;
+    }
+
+    .paragraph-small {
+        padding-top: 1em;
+        color: #9b9b9b;
+        font-size: 0.8em;
+        margin-bottom: 10px;
+    }
+}
+
+/* RESPONSIVE / TABLET */
+@media only screen and (min-width: 500px) {
+
+    /* MAIN CONTENT */
+    .featured-work-content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .project-one {
+        margin: 0 10px 0 0;
+    }
+
+    .project-three {
+        margin: 0 0 0 10px;
+    }
+}
+
+/* MINOR BREAKPOINT */
+@media only screen and (min-width: 650px) and (max-width: 1022px) {
+
+    body { margin: auto; }
+
+    .logo { margin-top: 20px; }
+}
+
+/* RESPONSIVE / DESKTOP */
+@media only screen and (min-width: 1022px) {
+
+    body {
+        display: flex;
+        max-width: 1000px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        margin: auto;
+    }
+
+    /* HEADER */
+    header {
+        order: 0;
+        margin: 0 20px;
+        width: 100%;
+    }
+
+    .logo {
+        width: 100px;
+        height: 100px;
+        margin-top: 20px;
+    }
+
+    /* TEXTUAL CONTENT */
+    h1 { font-size: 3.5em; }
+
+    h2 {
+        font-size: 1.1em;
+        color: #ffa500;
+    }
+
+    h3 {
+        font-size: 2.1em;
+        margin: auto 0;
+        margin-left: -20px;
+    }
+
+    h4 { font-size: 1.4em; }
+
+    p { font-weight: 400; }
+
+    /* MAIN CONTENT */
+    .main-container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    main {
+        order: 2;
+        margin: 0 20px;
+    }
+
+    .featured-work-container {
+        border-bottom: none;
+    }
+
+    /* FOOTER */
+    footer {
+        width: 100%;
+        height: 100px;
+        margin: 0 20px;
+    }
+}
