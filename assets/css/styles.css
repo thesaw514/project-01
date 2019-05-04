@@ -1,4 +1,6 @@
-/* Theodore Sawyer, FEND - Project 01: 'Build a Portfolio Site' / styles.css / 05.26.18 */
+/* Theodore Sawyer, FEND - Project 01: 'Build a Portfolio Site' / styles.css / Original Build: 05.26.18 */
+/* Updated (for 2019 Resume): 05.03.19 */
+
 /* SELECT ALL (*) ELEMENTS AND OVERWRITE BROWSER DEFAULTS */
 * {
     padding: 0;
@@ -103,6 +105,13 @@ hr {
         width: 100%;
         display: block;
         border: 1px solid #9b9b9b;
+    }
+
+    /*Added 05.03.19  */
+    .img-featured-placeholders {
+        width: 100%;
+        display: block;
+        border: none;
     }
 
     .featured-work-container { margin: 1em 0; }
